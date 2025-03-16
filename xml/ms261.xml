@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<handTool type="chainsaw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/handTool.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>MS 261</name>
+        <functions>
+            <function>$l10n_function_chainsaw</function>
+        </functions>
+        <image>$data/handTools/stihl/ms261/store_ms261.png</image>
+        <price>1000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>STIHL</brand>
+        <category>chainsaws</category>
+        <species>HANDTOOL</species>
+        <storeIconRendering>
+            <settings cameraXRot="-20" cameraYRot="40"/>
+        </storeIconRendering>
+    </storeData>
+
+    <base mass="4.9" canCrouch="true" walkMultiplier="3" runMultiplier="5">
+        <typeDesc>$l10n_typeDesc_chainsaw</typeDesc>
+        <filename>$data/handTools/stihl/ms261/ms261.i3d</filename>
+        <sounds filename="$data/handTools/stihl/ms261/sounds/ms261.xml"/>
+        <graphics node="graphics" lockFirstPerson="true"/>
+        <handNode node="cutHandNode" useLeftHand="true" />
+        <firstPersonNode node="firstPersonNode"/>
+    </base>
+
+    <storable>
+        <holderType type="CHAINSAW" node="holderNode"/>
+    </storable>
+
+    <motorized>
+        <motor startTime="400" minRPM="2800" maxRPM="10200" rpmVariability="0.2" rpmVariabilityChange="1"/>
+
+        <vibrations amount="0.0002 0.0005 0.0003" node="graphics"/>
+    </motorized>
+
+    <chainsaw maximumCutDiameter="2.5" maximumDelimbDiameter="1" cutTimePerSquareMeter="4">
+        <playerWorkStylePreset>chainsawSetStihl</playerWorkStylePreset>
+        <chain>
+            <animationNode class="ScrollingAnimation" node="chain" scrollSpeed="-20" speedFunc="getChainSpeedFactor" shaderParameterComponent="2" turnOnFadeTime="0.5" turnOffFadeTime="1"/>
+        </chain>
+        <effects>
+            <effectNode effectClass="ParticleEffect" effectNode="chipsEmitter"       particleType="CHAINSAW_WOOD" emitCountScale="1"/>
+            <effectNode effectClass="ParticleEffect" effectNode="dustEmitter"        particleType="CHAINSAW_DUST" emitCountScale="2"/>
+            <effectNode effectClass="ParticleEffect" effectNode="dustVentEmitter"    particleType="CHAINSAW_DUST" emitCountScale="4" spriteScale="0.15"/>
+        </effects>
+        <ringSelector filename="$data/handTools/shared/treeCutters/chainsawRingSelector.i3d"/>
+        <cutNode node="cutNode"/>
+    </chainsaw>
+
+    <i3dMappings>
+        <i3dMapping id="graphics" node="0>0" />
+        <i3dMapping id="chain" node="0>0|0" />
+        <i3dMapping id="chipsEmitter" node="0>0|1|0" />
+        <i3dMapping id="dustEmitter" node="0>0|1|1" />
+        <i3dMapping id="dustVentEmitter" node="0>0|1|2" />
+        <i3dMapping id="cutNode" node="0>0|3" />
+        <i3dMapping id="firstPersonNode" node="0>1" />
+        <i3dMapping id="holderNode" node="0>2" />
+        <i3dMapping id="rightHandTarget" node="0>3" />
+        <i3dMapping id="leftHandTarget" node="0>4" />
+        <i3dMapping id="handNode" node="0>5" />
+        <i3dMapping id="cutHandNode" node="0>6" />
+        <i3dMapping id="walkHandNode" node="0>7" />
+    </i3dMappings>
+</handTool>

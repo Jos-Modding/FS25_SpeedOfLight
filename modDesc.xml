@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="94">
+<modDesc descVersion="96">
     <author>Jos</author>
-    <version>1.0.0.0</version>
+    <version>1.0.1.0</version>
     <title>
         <en>Speed Of Light</en>
         <de>Lichtgeschwindigkeit</de>
         <nl>Snelheid Van Het Licht</nl>
     </title>
     <description>
-        <en><![CDATA[With one of these special flashlights to run at the speed of light.
+        <en><![CDATA[Use one of these special flashlights to run at the speed of light. Additionally, all basegame chainsaws have slightly increased walk/run speeds.
 
 Flashlight x10
 Category: Hand Tools > Miscellaneous
@@ -19,9 +19,14 @@ Flashlight x100
 Category: Hand Tools > Miscellaneous
 Price: $100
 Color: Red
+
+Changelog 1.0.1.0:
+- Added faster chainsaws
+
+Latest version and bug reports on <a href="https://github.com/Jos-Modding/FS25_SpeedOfLight">GitHub</a>.
 ]]>
         </en>
-        <de><![CDATA[Rüsten Sie eine dieser speziellen Taschenlampen so aus, dass sie mit Lichtgeschwindigkeit funktioniert.
+        <de><![CDATA[Rüsten Sie eine dieser speziellen Taschenlampen so aus, dass sie mit Lichtgeschwindigkeit funktioniert. Darüber hinaus verfügen alle Kettensägen im Basisspiel über eine leicht erhöhte Geh-/Laufgeschwindigkeit.
 
 Taschenlampe x10
 Shopkategorie: Werkzeuge > Sonstiges
@@ -32,9 +37,14 @@ Taschenlampe x100
 Shopkategorie: Werkzeuge > Sonstiges
 Preis: 100€
 Farbe: Rot
+
+Changelog 1.0.1.0:
+- Schnellere Kettensägen hinzugefügt
+
+Aktuelle Version und Fehlerberichte auf <a href="https://github.com/Jos-Modding/FS25_SpeedOfLight">GitHub</a>.
 ]]>
         </de>
-        <nl><![CDATA[Met een van deze zaklampen kan je rennen zo snel als het licht.
+        <nl><![CDATA[Met een van deze zaklampen kan je rennen zo snel als het licht. Bovendien hebben alle basisspelkettingzagen een iets hogere loop-/rensnelheid.
 
 Zaklamp x10
 Categorie: Handgereedschap > Diversen
@@ -45,13 +55,24 @@ Zaklamp x100
 Categorie: Handgereedschap > Diversen
 Prijs: €100
 Kleur: Rood
+
+Changelog 1.0.1.0:
+- Snellere kettingzagen toegevoegd
+
+Laatste versie en bug reports op <a href="https://github.com/Jos-Modding/FS25_SpeedOfLight">GitHub</a>.
 ]]>
         </nl>
     </description>
     <iconFilename>icon_SpeedOfLight.dds</iconFilename>
     <multiplayer supported="true"/>
     <storeItems>
+        <!-- Flashlights -->
         <storeItem xmlFilename="xml/flashlight_10.xml"/>
         <storeItem xmlFilename="xml/flashlight_100.xml"/>
+        <!-- Chainsaws -->
+        <storeItem xmlFilename="xml/xp550.xml"/>
+        <storeItem xmlFilename="xml/cs2252.xml"/>
+        <storeItem xmlFilename="xml/cs410.xml"/>
+        <storeItem xmlFilename="xml/ms261.xml"/>
     </storeItems>
 </modDesc>
