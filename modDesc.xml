@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="94">
+    <author>Jos</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Speed Of Light</en>
+        <de>Lichtgeschwindigkeit</de>
+        <nl>Snelheid Van Het Licht</nl>
+    </title>
+    <description>
+        <en><![CDATA[With one of these special flashlights to run at the speed of light.
+
+Flashlight x10
+Category: Hand Tools > Miscellaneous
+Price: $10
+Color: Yellow
+
+Flashlight x100
+Category: Hand Tools > Miscellaneous
+Price: $100
+Color: Red
+]]>
+        </en>
+        <de><![CDATA[Rüsten Sie eine dieser speziellen Taschenlampen so aus, dass sie mit Lichtgeschwindigkeit funktioniert.
+
+Taschenlampe x10
+Shopkategorie: Werkzeuge > Sonstiges
+Preis: 10€
+Farbe: Gelb
+
+Taschenlampe x100
+Shopkategorie: Werkzeuge > Sonstiges
+Preis: 100€
+Farbe: Rot
+]]>
+        </de>
+        <nl><![CDATA[Met een van deze zaklampen kan je rennen zo snel als het licht.
+
+Zaklamp x10
+Categorie: Handgereedschap > Diversen
+Prijs: €10
+Kleur: Geel
+
+Zaklamp x100
+Categorie: Handgereedschap > Diversen
+Prijs: €100
+Kleur: Rood
+]]>
+        </nl>
+    </description>
+    <iconFilename>icon_SpeedOfLight.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <storeItems>
+        <storeItem xmlFilename="xml/flashlight_10.xml"/>
+        <storeItem xmlFilename="xml/flashlight_100.xml"/>
+    </storeItems>
+</modDesc>

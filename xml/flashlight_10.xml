@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<handTool type="flashlight" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/handTool.xsd">
+    <storeData>
+        <name params="$l10n_storeItem_flashlight">%s x10</name>
+        <functions>
+            <function>$l10n_function_flashlight</function>
+        </functions>
+        <image>icons/store_flashlight_10.dds</image>
+        <price>10</price>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>0</dailyUpkeep>
+        <showInStore>true</showInStore>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>HANDTOOL</species>
+        <category>handtoolsMisc</category>
+        <canBeSold>true</canBeSold>
+    </storeData>
+
+    <base runMultiplier="10">
+        <filename>i3d/flashlight_10.i3d</filename>
+        <graphics node="graphics" lockFirstPerson="true"/>
+        <handNode node="handNode"/>
+        <firstPersonNode node="firstPersonNode"/>
+    </base>
+
+    <flashlight>
+        <light node="lightNode" mesh="selfIllum" distance="50" color="1 1 1" coneAngle="60" dropOff="5" iesProfile="$data/handTools/brandless/flashlight/flashlight.ies" />
+        <sounds>
+            <toggle file="$data/sounds/player/flashlight/plyrFlashlightOn_01.wav" linkNode="0>" innerRadius="1.0" outerRadius="2.0" supportsReverb="false">
+                <volume indoor="1.0" outdoor="1.0" />
+            </toggle>
+        </sounds>
+    </flashlight>
+
+    <i3dMappings>
+        <i3dMapping id="graphics" node="0>0" />
+        <i3dMapping id="lightNode" node="0>0|1" />
+        <i3dMapping id="selfIllum" node="0>0|2" />
+        <i3dMapping id="handNode" node="0>1" />
+        <i3dMapping id="firstPersonNode" node="0>2" />
+    </i3dMappings>
+</handTool>
